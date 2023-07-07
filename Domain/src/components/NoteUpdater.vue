@@ -69,7 +69,7 @@ export default {
                 fetch("https://api.imgur.com/3/image", {
                     method: "POST",
                     headers: {
-                        Authorization: "Client-ID c0838b58f30fa2a",
+                        Authorization: "Client-ID [imgur ID]",
                         Accept: "application/json",
                     },
                     body: formData,
