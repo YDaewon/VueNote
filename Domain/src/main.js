@@ -8,7 +8,7 @@ Vue.use(BootstrapVue)
 Vue.prototype.$http = axios
 Vue.config.productionTip = false
 import { store } from './store/store.js'
-window.Kakao.init('cd48461159e1d8ac85c6bb9ada37d0a7');
+window.Kakao.init('');
 new Vue({
   store,
   render: h => h(App),
