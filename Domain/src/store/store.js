@@ -57,7 +57,7 @@ export const store = new Vuex.Store({
             console.log("유저정보: ", state.user)
         },
         getWeather: (state) => {
-            fetch("http://api.openweathermap.org/data/2.5/weather?q="+state.city+"&appid=a5edeb79d117db797277bb5401ea65a4", {
+            fetch("http://api.openweathermap.org/data/2.5/weather?q="+state.city+"&appid=날씨 api ID", {
                 method: "POST",
             })
              .then((response) => response.json())
