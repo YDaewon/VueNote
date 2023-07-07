@@ -136,7 +136,7 @@ export default {
     },
     translate(text){
         // 카카오 KEY
-        var kakao_key= 'afd4f4d1d9d3046415bc32dc3d9f5b81';
+        var kakao_key= '';
         const api_url = 'https://dapi.kakao.com/v2/translation/translate';
         var query = text;
         fetch(api_url + '?src_lang='+'en'+'&target_lang='+'kr'+'&query='+ text, {
