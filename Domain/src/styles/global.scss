@@ -1,0 +1,361 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+    background: #ebebeb;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    margin: 0;
+}
+
+::placeholder {
+    color: #ccc;
+    font-size: 15px;
+}
+
+
+.header {
+    display: flex;
+    align-items: center;
+    // justify-content: center;
+    background: #000;
+    color: #fff;
+    margin-bottom: 50px;
+    & p {
+        font-size:25px;
+        margin:25px;
+    }
+}
+.logo{
+    margin-left:25px;
+    height:50px;
+}
+.kakao_btn{
+    width: 4%;
+    height: 30px;
+}
+
+.search {
+    //align-items: center;
+    background: rgb(241, 241, 241);
+    width: 30%;
+    height: 32px;
+    margin-left:18px;
+    padding-left: 8px;
+    padding: 3px;
+    border: none;
+    outline: none;
+}
+
+.theme-text{
+    margin-left: 10%;
+    font-size: 20px;
+}
+.app-theme-input {
+    background: rgb(241, 241, 241);
+    width: 100px;
+    height: 32px;
+    margin-left:1%;
+    padding-left: 8px;
+    padding: 3px;
+    border: none;
+    outline: none;
+}
+
+.search::placeholder {
+    font-size: 18px;
+}
+.menubut {
+    margin-left: 470px;
+    float: right;
+}
+.title-input {
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black
+}
+
+.title-input::placeholder {
+    font-size: 18px;
+}
+
+.user-input {
+    background: rgb(241, 241, 241);
+    width: 150px;
+    height: 32px;
+    margin-right:20px;
+    padding-left: 8px;
+    padding: 3px;
+    border: none;
+    outline: none;
+}
+
+.user-input::placeholder {
+    font-size: 18px;
+}
+
+.tag-input {
+    background: rgb(241, 241, 241);
+    width: 425px;
+    height: 32px;
+    margin-left:2px;
+    padding-left: 8px;
+    padding: 3px;
+    border: none;
+    outline: none;
+}
+
+.tag-button {
+    background: rgb(241, 241, 241);
+    width: 90px;
+    height: 32px;
+    margin-left:42px;
+    padding-left: 8px;
+    border: none;
+    outline: none;
+}
+
+.tag-input::placeholder {
+    font-size: 18px;
+}
+
+.theme-input {
+    background: rgb(241, 241, 241);
+    // width: 150px;
+    height: 30px;
+    margin-right:10px;
+    padding: 3px;
+    border: none;
+    outline: none;
+}
+
+.theme-input::placeholder {
+    font-size: 15px;
+}
+
+.font-input {
+    background: rgb(241, 241, 241);
+    width: 150px;
+    height: 32px;
+    margin-right:20px;
+    padding-left: 8px;
+    padding: 3px;
+    border: none;
+    outline: none;
+}
+
+.font-input::placeholder {
+    font-size: 10px;
+}
+
+.add-btn {
+    padding: 5px 10px;
+    margin: 20px;
+    border: none;
+    color: #000;
+    outline: none;
+    font-size: 10px;
+    cursor: pointer;
+    margin-right:50px;
+}
+.weather-image{
+    width: 50px;
+    height: 50px;
+    margin-left: 15px;
+}
+.source{
+    width: 300px;
+    height: 300px;
+}
+.canvas{
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.note-editor {    
+    max-width: 600px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    padding: 16px;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15);
+    border-radius: 3px;
+    textarea {
+        padding: 10px;
+        resize: none;
+        border: none;
+        &:hover {
+            outline: 0;
+        }
+        &:focus {
+            outline: 0;
+        }
+    }
+    
+}
+
+.imageupload{
+    max-width: 30%;
+    height: auto;
+}
+
+.note-title {
+    margin-right: 15px;
+    outline: none;
+}
+
+.noteContainer {
+    column-count: 4;
+    column-gap: 1em;
+    margin: 50px 25px;
+    height: 620px;
+}
+.foute{
+    text-align: center;
+    background: #ebebeb;
+    height: 100px;
+}
+
+.note {
+    position: relative;
+    border-radius: 3px;
+    box-shadow: 0 2px 2px rgba(0,90,250,0.05),
+      0 4px 4px rgba(0,90,250,0.05),
+      0 8px 8px rgba(0,90,250,0.05),
+      0 16px 16px rgba(0,90,250,0.05);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    display: inline-block;
+    margin: 0 0 1em;
+    width: 280px;
+    height: 10%;
+    background: #fff;
+    padding: 25px;
+    word-break: break-word;
+    cursor: pointer;
+    grid-row-end: span 1;
+}
+
+.note-name{
+    position: absolute;
+    right: 25px;
+    bottom: 5px;
+}
+
+.imageprint{
+    position: flex;
+    max-width: 225px;
+    height: auto;
+}
+
+.note-tag{
+    color: rgb(77, 139, 139);
+    position: static;
+    left: 25px;
+    bottom: 5px;
+    font-size: 12px;
+}
+
+.note-editor-bottom {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.note-editor-info {
+    background: rgba(255, 255, 255, 0.404);
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.input-hashtag {
+    background: rgba(255, 255, 255, 0.404);
+    display: flex;
+    //align-items: flex-end;
+    //flex-wrap: wrap;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.delete {
+    position: absolute;
+    right: 25px;
+    top: 25px;
+}
+.update {
+    position: absolute;
+    right: 70px;
+    top: 25px;
+}
+
+.download {
+    position: absolute;
+    right: 115px;
+    top: 25px;
+}
+.canvasdown{
+    position: relative;
+    right: 25px;
+}
+
+.color-red{
+    background: red;
+    width: 20px;
+    height: 20px;
+}
+
+.color-orange{
+    background: orange;
+    width: 20px;
+    height: 20px;
+}
+
+.color-yellow{
+    background:yellow;
+    width: 20px;
+    height: 20px;
+}
+
+.color-green{
+    background: green;
+    width: 20px;
+    height: 20px;
+}
+
+.color-blue{
+    background:blue;
+    width: 20px;
+    height: 20px;
+}
+
+.color-navy{
+    background: navy;
+    width: 20px;
+    height: 20px;
+}
+
+.color-purple{
+    background: purple;
+    width: 20px;
+    height: 20px;
+}
+.color-white{
+    background: white;
+    width: 20px;
+    height: 20px;
+}
+

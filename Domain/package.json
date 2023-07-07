@@ -1,0 +1,79 @@
+{
+  "name": "vue-sticky-notes",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@jeremyhamm/vue-slider": "^0.2.0",
+    "@tensorflow-models/coco-ssd": "^2.1.0",
+    "@tensorflow/tfjs": "^2.6.0",
+    "axios": "^0.21.0",
+    "body-parser": "^1.19.0",
+    "bootstrap": "^4.5.3",
+    "bootstrap-vue": "^2.18.0",
+    "build": "^0.1.4",
+    "bulma": "^0.8.2",
+    "core-js": "^3.6.4",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "forismatic-node": "^1.1.4",
+    "literallycanvas": "^0.5.2",
+    "request": "^2.88.2",
+    "uuid": "^8.0.0",
+    "vue": "^2.6.12",
+    "vue-html2canvas": "0.0.4",
+    "vue-kakao-login": "^1.0.5",
+    "vue-sidebar-menu": "^4.7.4",
+    "vues": "^0.5.20",
+    "vuex": "^3.6.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.3.0",
+    "@vue/cli-plugin-eslint": "~4.3.0",
+    "@vue/cli-service": "~4.3.0",
+    "autoprefixer-loader": "^3.2.0",
+    "babel-eslint": "^10.1.0",
+    "css-loader": "^3.5.3",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "node-sass": "^4.14.0",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.2.1",
+    "vue-template-compiler": "^2.6.12"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {
+      "no-unused-vars": "off"
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "description": "```\r npm install\r ```",
+  "main": "babel.config.js",
+  "repository": {
+    "type": "git",
+    "url": "http://git.kumoh.ac.kr/qkqh9779/osp-project_2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
