@@ -8,7 +8,7 @@ Vue.use(BootstrapVue)
 Vue.prototype.$http = axios
 Vue.config.productionTip = false
 import { store } from './store/store.js'
-window.Kakao.init('');
+window.Kakao.init('카카오 키를 넣어주세요');
 new Vue({
   store,
   render: h => h(App),
